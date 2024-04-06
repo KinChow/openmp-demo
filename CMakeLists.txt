@@ -50,3 +50,5 @@ target_link_libraries(${PROJECT_NAME} -fopenmp -static-openmp)
 else()
 target_link_libraries(${PROJECT_NAME} PUBLIC OpenMP::OpenMP_CXX)
 endif()
+
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output)
